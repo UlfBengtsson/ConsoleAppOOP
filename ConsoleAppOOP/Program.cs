@@ -7,13 +7,35 @@ namespace ConsoleAppOOP
     {
         static void Main(string[] args)
         {
-            Car myCar = new Car("BMW","525i","SBP704");
 
-            Console.WriteLine(myCar.Info());
+            new Car("BMW", "525i", "SBP704123123");
 
-            Car ericsCar = new Car("Volvo","745","Skrott");
+            //Car[] cars = { new Car("BMW", "525i", "SBP704"), new Car("Volvo", "745", "Skrott") };
 
-            Console.WriteLine(ericsCar.ToString());
+            //foreach (Car aCar in cars)
+            //{
+            //    //Console.WriteLine(aCar.ToString());// same as below
+            //    Console.WriteLine(aCar);
+            //}
+
+            //Console.Write("Select Car with number to see more information.\nSelection: ");
+            //int selection = -1;
+
+            //if (int.TryParse(Console.ReadLine(), out selection) && selection > 0)
+            //{
+            //    Console.WriteLine("valid input");
+            //    foreach (var item in cars)
+            //    {
+            //        if (item.Id == selection)
+            //        {
+            //            Console.WriteLine(item.Info());
+            //        }
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("invalid input");
+            //}
         }
     }
 }

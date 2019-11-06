@@ -41,10 +41,15 @@ namespace ConsoleAppOOP.Models
             modelName = model;
             RegPlate = regPlate;// use our filter
         }
+        public Car(string brand, string model, string regPlate, int wheels) : this(brand,model,regPlate) // Chain constructor
+        {
+            this.wheels = wheels;
+        }
+
 
         public string Info()
         {
-            return $"Car Id: {Id}\nBrand: {brand}\nModel: {modelName}\nReg.Plate: {RegPlate}";
+            return $"Car Id: {Id}\nBrand: {brand}\nModel: {modelName}\nReg.Plate: {RegPlate}\nWheels: {wheels}";
         }
 
         public override string ToString()
